@@ -88,6 +88,7 @@ $active.addEventListener('transitionend', transitionHandler);
   }
   ```
   即左移自身宽度
+  
 7. 这样就完成了图片由p1切换为p2，然后监听`transitionend`事件，移除 'next'、'left'、'right'等中间态的class, 给 $next(即p2) 添加 'active' 类，同时移除 $active(即p1)的 'active' 类
 
 ps：里面涉及一个关键点，切换时通过js保证下一个要激活的图片通过绝对定位放在当前图片的左边或者右边（取决于上一张、还是下一张）。另外一个点就是 切换完成后需要将绝对定位切换成相对定位。
