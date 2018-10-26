@@ -52,7 +52,9 @@ $active.addEventListener('transitionend', transitionHandler);
 以p1 -> p2为例：
 
 1. $active 为 p1, $next为 p2；
+
 2. type 为 'next'，direction 为 'left'；
+
 3. 给$next(即p2)添加 'next' 类，其样式为：
   ```css
   {
@@ -64,7 +66,9 @@ $active.addEventListener('transitionend', transitionHandler);
   }
   ```
   即在p1的右边展示，left为0，然后使用translate右移自身宽度
+  
 4. $next.offsetWidth 保证当前设置生效，以防浏览器做js操作dom进行一些优化
+
 5. 给$active(即p1)添加 'left' 类, 其样式添加：
   ```css
   {
