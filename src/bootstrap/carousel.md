@@ -4,12 +4,13 @@
 2. https://github.com/twbs/bootstrap/blob/v3.3.7/less/carousel.less
 
 基本是源码拷贝过来，改动点：
-样式相关改动：
+
+- 样式相关改动：
 1. 将less转换为css；
 2. 移除样式中关于左右翻页， icon相关样式；
 3. 移除样式中的 > ，个人看着别扭而已；
 
-js逻辑实现相关改动：
+- js逻辑实现相关改动：
 1. 移除对jquery的依赖，dom操作全部由原生js完成；
 2. 简化实现，目前一个html页面只允许存在一个轮播图；
 3. 自定义事件使用CustomEvent完成
